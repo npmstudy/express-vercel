@@ -6,6 +6,9 @@ const PORT = 8000;
 
 app.use(express.static(path.join(__dirname, "public")));
 
+
+app.use("/static", express.static(path.join(__dirname, "public")));
+
 app.engine(".html", require("ejs").__express);
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "html");
