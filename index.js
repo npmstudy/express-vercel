@@ -1,5 +1,5 @@
-const path = require("path");
-const express = require("express");
+import path from "path";
+import express from "express";
 
 const app = express();
 const PORT = 8000;
@@ -27,7 +27,6 @@ app.get("/user", function (req, res) {
     header: "Some users",
   });
 });
-
 
 app.get("/", (req, res) => {
   res.send("Hello World");
