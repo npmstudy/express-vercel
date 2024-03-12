@@ -7,7 +7,7 @@ const PORT = 8000;
 app.use(express.static(path.join(__dirname, "public")));
 
 app.set("views", path.join(__dirname, "views"));
-app.set("view engine", "ejs");
+app.set("view engine", "html");
 
 // app.get("/view", (req, res) => {
 //   res.render("index", { title: "Hey", message: "Hello there!" });
